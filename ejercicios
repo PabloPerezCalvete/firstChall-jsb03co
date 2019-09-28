@@ -1,0 +1,52 @@
+let n1 = 5;
+let n2 = 7;
+
+let i = prompt();
+console.log(i);
+if (i == 1) {
+  console.log(n1 + n2);
+} else if (i == 2) {
+  console.log(n1 - n2);
+} else if (i == 3) {
+  console.log(n1 * n2);
+} else if (i == 4) {
+  console.log(n1 / n2);
+} else {
+  console.log('error');
+}
+console.log('────────────────────────────────────────────────────────────────────────────────');
+
+const names11 = ['Rafael', 'Jon', 'Marcos'];
+const names12 = ['Ana', 'Óscar', 'Gabriel'];
+const names13 = ['Luis', 'Alex', 'Lorena'];
+const ages11 = [34, 21, 52];
+const ages12 = [19, 22, 41];
+const ages13 = [63, 26, 57];
+const gender11 = ['male', 'male', 'male'];
+const gender12 = ['female', 'male', 'male'];
+const gender13 = ['male', 'male', 'female'];
+console.log(names11);
+
+class persona {
+  constructor(name, age, gender) {
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+  }
+}
+class teacher extends persona {
+  constructor(subject, studentlist) {
+    this.subject = subject;
+    this.studentlist = studentlist;
+    super(teacher.name);
+  }
+}
+class student extends persona {
+  constructor(course, group) {}
+}
+let e = 0;
+
+for (e = 0; e <= 50; e = e + Math.ceil(Math.random() * 6)) {
+  console.log(e);
+}
+console.log('gameOver');
